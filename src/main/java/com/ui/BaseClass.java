@@ -104,8 +104,9 @@ public class BaseClass {
 
 
     public static void closeBrowser() {
-        driver.close();
+   //driver.close();
         driver.quit();
+        System.out.println("Completed the execution");
     }
 
     public static void StepTakesScreenshot(Scenario scenario) {

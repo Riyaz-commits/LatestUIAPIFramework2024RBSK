@@ -1,0 +1,10 @@
+stepDefinitions\support\ui\Hooks.class
+runner\webRunner\IgnorePractise\Product.class
+runner\webRunner\IgnorePractise\ParserExample.class
+stepDefinitions\support\api\Hooks.class
+runner\webRunner\SampleTestRunner.class
+runner\webRunner\DemoRunner.class
+runner\webRunner\IgnorePractise\CheckMultiples.class
+runner\webRunner\TestUIRunner.class
+runner\webRunner\IgnorePractise\ProductList.class
+stepDefinitions\ui\LoginPageSteps.class

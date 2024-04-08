@@ -1,6 +1,7 @@
 package com.ui.pages;
 
 import com.ui.BaseClass;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,6 +17,7 @@ public class LoginPage  extends BaseClass {
         PageFactory.initElements(driver,this);
     }
     public  UIUtils utils = new UIUtils(driver);
+
     @FindBy(xpath="//*[@id='user-name']")
     public WebElement username;
 
@@ -25,16 +27,12 @@ public class LoginPage  extends BaseClass {
     @FindBy(xpath="//*[@id='login-button']")
     public WebElement loginButton;
 
+
+
     public void loginToPage() throws InterruptedException {
-
-
         utils.setValue(username,"standard_user");
-
-
         Thread.sleep(3000);
         utils.setValue(password,"secret_sauce");
-
-
         utils.click(loginButton);
         StepTakesScreenshot(cScenario);
     }

@@ -17,14 +17,25 @@ public class ProductPage extends BaseClass {
     @FindBy(xpath="//*[contains(text(),'Sauce Labs Backpack')]")
     public WebElement backPackClick;
 
-    @FindBy(xpath="//*[@id='add-to-cart-sauce-labs-backpack']")
+    @FindBy(xpath="//*[@id='add-to-cart-sauce-labs-backpack' or @name='add-to-cart']")
     public WebElement addToCart;
 
-    @FindBy(xpath = "//*[@id='shopping_cart_container']")
+    @FindBy(xpath = "//*[@data-test='shopping-cart-link']")
     public WebElement cart;
 
     @FindBy(xpath = "//*[@id='checkout']")
     public WebElement checkOut;
+
+    @FindBy(xpath = "//*[@placeholder='First Name']")
+    public WebElement firstName;
+
+    @FindBy(xpath = "//*[@placeholder='Last Name']")
+    public WebElement lastName;
+
+    @FindBy(xpath = "//*[@placeholder='Zip/Postal Code']")
+    public WebElement zipCode;
+
+
 
     public void clickProduct() throws InterruptedException {
 
@@ -35,6 +46,15 @@ public class ProductPage extends BaseClass {
         StepTakesScreenshot(cScenario);
         Thread.sleep(3000);
         utils.click(checkOut);
+        StepTakesScreenshot(cScenario);
+    }
+
+
+    public void fillCheckoutDetails() throws InterruptedException {
+        utils.setValue(firstName,"Captain");
+        Thread.sleep(3000);
+        utils.setValue(lastName,"America");
+        utils.setValue(zipCode,"934533");
         StepTakesScreenshot(cScenario);
     }
 }

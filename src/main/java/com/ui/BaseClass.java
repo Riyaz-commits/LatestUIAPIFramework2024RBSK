@@ -119,7 +119,7 @@ public class BaseClass {
             screenshotMap.put(scenario.getName() + "_" + screenshotName, screenshot);
 
         } catch (Exception ignored) {
-
+            System.out.println();
         }
     }
 

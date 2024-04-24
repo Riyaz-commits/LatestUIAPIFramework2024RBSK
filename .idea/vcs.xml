@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LatestUIAPIFramework2024RBSK" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/SDETProgram_91" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/UIBDDFramework" vcs="Git" />
   </component>

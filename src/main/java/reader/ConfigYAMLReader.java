@@ -1,4 +1,4 @@
-package reader.properties;
+package reader;
 
 public class ConfigYAMLReader {
 }
